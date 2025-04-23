@@ -1,103 +1,36 @@
+# 🌦️ Weather App
 
-🌤️ Weather App
-A sleek and modern weather application built with React (Vite) and Express.js, featuring real-time weather updates, hourly forecasts, and user authentication via Supabase.
+A beautiful full-stack weather application built with **React (Vite)** and **Express.js**, using **Supabase** for authentication and **WeatherAPI** for fetching real-time weather data.
 
+![App Screenshot](./Screen.png)
 
-🔗 Live Demo
-Coming soon (Deploy on Vercel/Render)
+## 🔧 Features
 
-🚀 Features
-🌍 Get Weather by City Name
+- ✅ User Registration & Login (custom built with Supabase)
+- 🌤️ Searchable current weather by city
+- ⏱️ Hourly forecast (6-hour preview)
+- 🎨 Tailwind CSS styling and UI animations
+- 🛠️ Backend structured in MVC architecture
 
-📦 Fetch Live Data from Weather API
+## ⚙️ Backend API
 
-🔐 User Registration & Login (using Supabase)
+**Base URL:** `http://localhost:8000/api`
 
-🧭 Hourly Forecast View
+- `POST /auth/register` — Register user  
+- `POST /auth/login` — Login user  
+- `GET /auth/profile?email=` — Fetch user profile  
+- `GET /weather/:city` — Get weather info + forecast  
 
-💡 Modern UI with Tailwind CSS
+## 🧰 Tech Stack
 
-🌈 Beautiful Gradients and Animations
+**Frontend:**
+- React + Vite
+- Tailwind CSS
+- React Router DOM
 
-🖼️ Custom animated weather icons
+**Backend:**
+- Node.js
+- Express.js (MVC structure)
+- Supabase (for user authentication and storage)
 
-🌐 Responsive and mobile-friendly
-
-🧰 Tech Stack
-
-Frontend	Backend	Auth & DB
-React + Vite	Express.js (MVC)	Supabase
-Tailwind CSS	Node.js	Supabase Table
-React Router DOM	REST API	BcryptJS
-📸 Screenshots
-
-Weather Page 💨	Login Page 🔐
-⚙️ Installation
-bash
-Copy
-Edit
-git clone https://github.com/sachin4real/Weather-App.git
-cd Weather-App
-🔧 Backend Setup
-bash
-Copy
-Edit
-cd backend
-npm install
-npm run dev
-Make sure to add a .env file in /backend/:
-
-ini
-Copy
-Edit
-PORT=8000
-WEATHER_API_KEY=your_weather_api_key_here
-SUPABASE_URL=https://your-project.supabase.co
-SUPABASE_KEY=your_service_role_key
-🎨 Frontend Setup
-bash
-Copy
-Edit
-cd my-weather-app
-npm install
-npm run dev
-📂 Folder Structure
-css
-Copy
-Edit
-Weather-App/
-├── backend/
-│   ├── controllers/
-│   ├── routes/
-│   ├── utils/
-│   └── server.js
-├── my-weather-app/
-│   ├── components/
-│   ├── assets/
-│   ├── App.jsx
-│   └── main.jsx
-📌 Routes
-🔐 Auth
-POST /api/auth/register
-
-POST /api/auth/login
-
-GET /api/auth/profile?email=user@example.com
-
-🌤️ Weather
-GET /api/weather/:city
-
-🎁 Additional Features
-🌠 Animated weather logo
-
-📊 Forecast data mapped with dynamic icons
-
-🧠 Error handling when city not found
-
-🎨 Beautiful hover effects and gradient buttons
-
-🧑‍💻 Author
-Sachintha Wadugedara
-📧 sachin@gmail.com
-🔗 GitHub
 
