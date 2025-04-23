@@ -1,6 +1,6 @@
 # 🌦️ Weather App
 
-A beautiful full-stack weather application built with **React (Vite)** and **Express.js**, using **Supabase** for authentication and **WeatherAPI** for fetching real-time weather data.
+A beautiful full-stack weather application built with **React (Vite)** and **Express.js**, using **Supabase**  and **WeatherAPI** for fetching real-time weather data.
 
 ![App Screenshot](https://github.com/sachin4real/Weather-App/blob/292b4e67d9d1559362ae5d74480158d704c1e9fe/my-weather-app/public/Screen.png)
 
