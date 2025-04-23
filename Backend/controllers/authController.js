@@ -40,5 +40,18 @@ export const loginUser = async (req, res) => {
   const isMatch = await bcrypt.compare(password, user.password);
   if (!isMatch) return res.status(401).json({ error: 'Invalid credentials' });
 
-  res.json({ message: 'Login successful' });
+  res.json({ message: 'Login successful', user: { email: user.email } });
+};
+
+export const getUserProfile = async (req, res) => {
+  const { email } = req.query;
+  const { data: user, error } = await supabase
+    .from('users')
+    .select('id, email')
+    .eq('email', email)
+    .single();
+
+  if (error || !user) return res.status(404).json({ error: 'User not found' });
+
+  res.json(user);
 };
