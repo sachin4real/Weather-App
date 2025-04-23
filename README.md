@@ -6,11 +6,11 @@ A beautiful full-stack weather application built with **React (Vite)** and **Exp
 
 ## 🔧 Features
 
-- ✅ User Registration & Login (custom built with Supabase)
-- 🌤️ Searchable current weather by city
-- ⏱️ Hourly forecast (6-hour preview)
-- 🎨 Tailwind CSS styling and UI animations
-- 🛠️ Backend structured in MVC architecture
+-  User Registration & Login (custom built with Supabase)
+-  Searchable current weather by city
+-  Hourly forecast (6-hour preview)
+-  Tailwind CSS styling and UI animations
+-  Backend structured in MVC architecture
 
 ## ⚙️ Backend API
 
