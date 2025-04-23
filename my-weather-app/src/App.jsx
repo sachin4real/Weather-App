@@ -4,6 +4,7 @@ import RegisterForm from './components/RegisterForm';
 import LoginForm from './components/LoginForm';
 import WeatherSearch from './components/WeatherSearch';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function AppRoutes({ user, setUser }) {
   return (
@@ -25,6 +26,7 @@ export default function App() {
         <div className="p-6">
           <AppRoutes user={user} setUser={setUser} />
         </div>
+        <Footer />
       </div>
     </Router>
   );
